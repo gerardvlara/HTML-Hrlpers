@@ -54,11 +54,11 @@ namespace HTML_HELPERS.Models
             return lista;
         }
 
-        public enum Genero
-        {
-            Masculino,
-            Femenino
-        }
+        //public enum Genero
+        //{
+        //    Masculino,
+        //    Femenino
+        //}
 
       
         public string Estado { get; set; }
