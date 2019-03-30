@@ -1,0 +1,39 @@
+﻿@model HTML_HELPERS.Models.Register
+@{
+    ViewBag.Title = "MostrarDatos";
+}
+
+<h2>Mostrar Datos</h2>
+
+
+<table >
+    <thead>
+        <tr>
+            <td style="align-self">Cedula</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+            <td>Telefono</td>
+            <td>Correo</td>
+            <td>Genero</td>
+            <td>Estado</td>
+            <td>Hobbys</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row">
+            <td>@Model.Cedula</td>
+            <td>@Model.Nombre</td>
+            <td>@Model.Apellido</td>
+            <td>@Model.Edad</td>
+            <td>@Model.Telefono</td>
+            <td>@Model.Correo</td>
+            <td>@Model.Genero</td>
+            <td>@Model.Estado</td>
+            <td>@Model.Hobbys</td>
+        </tr>
+    </tbody>
+
+</table>
+
+
