@@ -16,7 +16,7 @@ namespace HTML_HELPERS
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Register", action = "Form", id = UrlParameter.Optional }
             );
         }
     }

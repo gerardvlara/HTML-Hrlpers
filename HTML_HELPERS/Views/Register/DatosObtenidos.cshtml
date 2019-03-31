@@ -2,38 +2,27 @@
 @{
     ViewBag.Title = "MostrarDatos";
 }
+<div class="jumbotron">
+    <h2>Mostrar Datos</h2>
 
-<h2>Mostrar Datos</h2>
+    <label>Cédula: @Model.Cedula</label><br />
 
+    <label>Nombre: @Model.Nombre</label><br />
 
-<table >
-    <thead>
-        <tr>
-            <td style="align-self">Cedula</td>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>Edad</td>
-            <td>Telefono</td>
-            <td>Correo</td>
-            <td>Genero</td>
-            <td>Estado</td>
-            <td>Hobbys</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="row">
-            <td>@Model.Cedula</td>
-            <td>@Model.Nombre</td>
-            <td>@Model.Apellido</td>
-            <td>@Model.Edad</td>
-            <td>@Model.Telefono</td>
-            <td>@Model.Correo</td>
-            <td>@Model.Genero</td>
-            <td>@Model.Estado</td>
-            <td>@Model.Hobbys</td>
-        </tr>
-    </tbody>
+    <label>Apellido: @Model.Apellido</label><br />
 
-</table>
+    <label>Edad: @Model.Edad</label><br />
+
+    <label>Telefono: @Model.Telefono</label><br />
+
+    <label>Correo: @Model.Correo</label><br />
+
+    <label>Género: @Model.Genero</label><br />
+
+    <label>Estado: @Model.Estado</label><br />
+
+    <label class="jumbotron">Hobbys: @Model.Hobbys</label><br />
+
+</div>
 
 

@@ -25,23 +25,21 @@ namespace HTML_HELPERS.Controllers
             ViewData["register"] = modelo.getDatos();
             return View();
         }
-    
-        public ActionResult DatosObtenidos()
+        [HttpPost]
+        public ActionResult DatosObtenidos(Register datos)
         {
             if (ModelState.IsValid)
             {
-                Register datos = new Register();
 
-
-                //datos.Cedula = int.Parse(Request.Form["Edad"].ToString());///Cambiar el tipo a la cedula y a las que faltan
-                //datos.Nombre = Request.Form["Nombre"].ToString();
-                //datos.Apellido = Request.Form["Apellido"].ToString();
-                //datos.Edad = int.Parse(Request.Form["Edad"].ToString());
-                //datos.Telefono = Request.Form["Telefono"].ToString();
-                //datos.Correo = Request.Form["Correo"].ToString();
-                //datos.Genero = Request.Form["Genero"].ToString();
-                //datos.Estado = Request.Form["Estado"].ToString();
-                //datos.Hobbys = Request.Form["Hobbys"].ToString();
+                datos.Cedula = Convert.ToInt32(Request.Form["Cedula"].ToString());///Cambiar el tipo a la cedula y a las que faltan
+                datos.Nombre = Request.Form["Nombre"].ToString();
+                datos.Apellido = Request.Form["Apellido"].ToString();
+                datos.Edad = int.Parse(Request.Form["Edad"].ToString());
+                datos.Telefono = Request.Form["Telefono"].ToString();
+                datos.Correo = Request.Form["Correo"].ToString();
+                datos.Genero = Request.Form["SeleccionarGenero"].ToString();
+                datos.Estado = Request.Form["Estado"].ToString();
+                datos.Hobbys = Request.Form["Hobbys"].ToString();
 
                 return View(datos);
             }

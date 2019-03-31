@@ -8,7 +8,7 @@ namespace HTML_HELPERS.Models
 {
     public class Register
     {
-        [Required(ErrorMessage = "El Cedula es obligatorio")]
+        [Required]
         public int Cedula { get; set; }
 
         [Required(ErrorMessage = "El Nombre es obligatorio")]
